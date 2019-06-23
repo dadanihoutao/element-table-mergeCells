@@ -31,7 +31,7 @@ npm run dev
 npm run build
 ```
 
-##需求背景
+## 需求背景
  - 最近使用element UI 的table 组件碰到一个需求，就是要纵向合并相同的单元格，官方提供了span-method 方法，
  - span-method 方法提供了四个参数 [官方链接](https://element.eleme.cn/#/zh-CN/component/table)
  - 后来经过百度找到一个思路很清晰的demo 拿过来改了下，就可以用了，但是后来发现会有很多table 组件用到这个方法，
@@ -43,13 +43,13 @@ npm run build
  - 我们可以吧要合并的key 值写成一个数组，作为参数传进去，然后内部一顿操作，把单元格合并，这种才算是通用吧！
  - 所以按照这个方向就开始搞了！
 
-##目录简介
+## 目录简介
  - src/components/simple.vue 简单版本
  - src/components/encapsulation.vue 封装过的版本
  - src/uitl.js 封装的方法
  - src/data.js 封装版用到的数据（数据格式有点乱，见谅！）
 
-##效果图
+## 效果图
  - 简单版本 
  ![Image text](./src/assets/images/jiandan.png)
  - 封装过的版本
