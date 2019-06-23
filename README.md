@@ -48,3 +48,9 @@ npm run build
  - src/components/encapsulation.vue 封装过的版本
  - src/uitl.js 封装的方法
  - src/data.js 封装版用到的数据（数据格式有点乱，见谅！）
+
+##效果图
+ - 简单版本 
+ ![Image text](./src/assets/images/jiandan.png)
+ - 封装过的版本
+ ![Image text](./src/assets/images/fengzhuang.png)
