@@ -42,6 +42,7 @@ npm run build
  - 正好 span-method 方法返回的四个参数中 { row, column, rowIndex, columnIndex } column参数对象下有一个property 属性，就是我们写的prop 的值
  - 我们可以吧要合并的key 值写成一个数组，作为参数传进去，然后内部一顿操作，把单元格合并，这种才算是通用吧！
  - 所以按照这个方向就开始搞了！
+ - 具体逻辑就不在这里细说了，可以先看我上边提供的博客，=> 简单版本 => 封装版本 代码
 
 ## 目录简介
  - src/components/simple.vue 简单版本
