@@ -50,13 +50,13 @@ export function handleObjectSpanMethod (tableObj, mergeKeys, rowspanObj, notEmpt
     if (mergeKeys instanceof Array && rowspanObj instanceof Object) {
         const { row, column, rowIndex, columnIndex } = tableObj
         for (let i = 0 ; i < mergeKeys.length; i++) {
-            let patt
+            let term
             if (notEmpty) {
-                patt = column.property === mergeKeys[i] && row[mergeKeys[i]] !== '/'
+                term = column.property === mergeKeys[i] && row[mergeKeys[i]] !== '/'
             } else {
-                patt = column.property === mergeKeys[i]
+                term = column.property === mergeKeys[i]
             }
-            if (patt) {
+            if (term) {
                 const _row = rowspanObj[mergeKeys[i]][rowIndex]
                 const _col = _row > 0 ? 1 : 0;
                 return {
