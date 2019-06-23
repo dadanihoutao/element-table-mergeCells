@@ -14,6 +14,7 @@ export function handleTableSpan(mergeKeys, tableData) {
                     spanObj[key].push(1)
                     position = 0
                 } else {
+                    // 如果要合并的key 值是引用数据类型，我们要先把 数组或者 对象转成json 格式然后对比
                     if (tableData[index][key] instanceof Array || tableData[index][key] instanceof Object) {
                         if (JSON.stringify(tableData[index][key]) === JSON.stringify(tableData[index - 1][key])) {
                             spanObj[key][position] +=1
